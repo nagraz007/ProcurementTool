@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.0.0.20091029.1.612548" APIVersion="3.1.9277.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2011-12-01T08:10:08Z" uuid="2e337895-68ab-4127-ba25-51c725401528">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform name="POForm" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="197.3mm" h="284.3mm" name="MainHolder"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <?templateDesigner expand 0?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform w="197.3mm" h="144.46mm" name="POSubForm">
+         <draw name="InseadLogo" y="3.175mm" x="4.73mm" minW="90.558mm" minH="15.795mm">
+            <value>
+               <image contentType="image/png">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</image>
+            </value>
+            <ui>
+               <imageEdit/>
+            </ui>
+            <desc>
+               <text name="embeddedHref">..\..\..\..\Users\BHANOORI\Desktop\purchdept.png</text>
+            </desc>
+         </draw>
+         <draw name="headerTxt" y="8.199mm" x="43.497mm" w="53.604mm" h="6.318mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>PURCHASING DEPARTMENT</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt">
+               <fill>
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 149114 15075 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 21 PURCHASING DEPARTMENT 0 1417 10129 255 255 255 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="POHolder" y="3.274mm" x="101.497mm" w="92.391mm" h="16.503mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <fill>
+                     <color value="192,192,192"/>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                  </fill>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+            <para vAlign="middle" hAlign="center"/>
+         </draw>
+         <draw name="POLabel" y="8.501mm" x="105.332mm" w="37.943mm" h="5.939mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Purchase Order # </text>
+            </value>
+            <font size="12pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 104721 14001 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 17 Purchase Order #  0 1417 10921 0 0 0 "Century Gothic" 1 0 12000 ISO-8859-1?></draw>
+         <field name="PONumber" y="6.36mm" x="143.535mm" minW="49.482mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="12pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+         </field>
+         <draw name="AdrsLn1" y="25.275mm" x="9.873mm" w="60.215mm" h="0.369917in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>IT Purchasing Department SG</text>
+            </value>
+            <font size="12pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 167854 23800 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 27 IT Purchasing Department SG 0 1417 10921 0 0 0 "Century Gothic" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="AdrsLn2" y="31.594mm" x="9.873mm" w="46.746mm" h="0.344917in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>1 Ayer Rajah Avenue</text>
+            </value>
+            <font size="12pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 129674 22000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 19 1 Ayer Rajah Avenue 0 1417 10921 0 0 0 "Century Gothic" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="AdrsLn3" y="37.923mm" x="9.884mm" w="37.324mm" h="13.841mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Singapore 138676 </text>
+            </value>
+            <font size="12pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 102966 36400 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 16 Singapore 138676 0 1417 10921 0 0 0 "Century Gothic" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="AdrsLn4" y="44.242mm" x="9.873mm" w="31.755mm" h="8.408mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Tel: 65 6799 5305</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 87180 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 17 Tel: 65 6799 5305 0 1417 10129 0 0 0 "Century Gothic" 0 0 11000 ISO-8859-1?></draw>
+         <draw name="DateHolder" y="25.14mm" x="101.497mm" w="20.451mm" h="16.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <fill>
+                     <color value="192,192,192"/>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                  </fill>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="SupplierHolder" y="25.14mm" x="174.377mm" w="19.319mm" h="16.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <fill>
+                     <color value="192,192,192"/>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                  </fill>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="PageNoHolder" y="25.14mm" x="122.235mm" w="51.848mm" h="16.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <fill>
+                     <color value="192,192,192"/>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                  </fill>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="DTLn" y="32.808mm" x="101.548mm" w="20.214mm" h="0in">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.254mm"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="PGLn" y="32.756mm" x="174.466mm" w="19.104mm" h="0.052mm">
+            <value>
+               <line>
+                  <edge thickness="0.254mm"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="DateLabel" y="27.12mm" x="103.585mm" w="12.435mm" h="0.331028in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Date</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 32415 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 4 Date 0 1417 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="SupplierLabel" y="26.855mm" x="131.365mm" w="29.2864mm" h="0.331028in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Supplier</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 80183 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 Supplier 0 20169 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="PageLabel" y="26.99mm" x="169.63mm" w="29.2864mm" h="0.331028in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Page</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 80183 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 4 Page 0 27646 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <field name="SupplierName" y="32.42mm" x="123.295mm" h="9mm" minW="48.555mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="11pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <field name="PageNumber" y="1.271653in" x="6.942722in" h="9.105mm" minW="15.08mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="11pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+            <value>
+               <text>1</text>
+            </value>
+         </field>
+         <field name="DateValue" y="32.29mm" x="101.267mm" h="9mm" minW="21.166mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="11pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <draw name="DelivRefHolder" y="54.401mm" x="4.73mm" w="88.37mm" h="26.72mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Dhln1" y="67.75mm" x="4.968mm" w="87.894mm" h="0.023mm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.254mm"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="Dhln2" y="54.734mm" x="57.49mm" w="0in" h="26.28mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <field name="DliveryRefValue" y="56.671mm" x="59.56mm" h="9mm" minW="32.01mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="12pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+         </field>
+         <field name="EstimDtDlvValue" y="69.901mm" x="59.56mm" h="9mm" minW="32.306mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="12pt" typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+         </field>
+         <draw name="InvoiceAttnHolder" y="54.401mm" x="101.497mm" w="92.081mm" h="26.72mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm" join="round"/>
+                  <fill>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                     <color value="192,192,192"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="MessageHolder" y="86.294mm" x="4.73mm" w="188.66mm" h="24.61mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm" join="round"/>
+                  <fill>
+                     <radial type="toCenter">
+                        <color value="255,255,255"/>
+                     </radial>
+                     <color value="192,192,192"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="MessageValue" y="89.484mm" x="9.01mm" w="162.651mm" h="18.858mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Century Gothic';text-decoration:none;letter-spacing:0in">Delivery to the attention of: Purchasing Department SG (address above)<br/>In case of non-delivery, we cannot be held responsible.<br/>On your invoice, please specify the Serial # of the material and their<span style="font-family:'Courier New'"><span style="xfa-spacerun:yes"> </span></span>warranty period<span style="font-family:'Courier New'">.</span></p><p style="font-family:'Courier New';text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font size="11pt" typeface="Myriad Pro" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <subform name="Table" layout="table" columnWidths="24.6626mm 63.168mm 13.258mm 19.173mm 20.303mm 18.608mm 10.711mm 18.896mm" x="4.73mm" y="116.353mm">
+            <border>
+               <edge/>
+            </border>
+            <subform layout="row" name="HeaderRow">
+               <assist role="TH"/>
+               <draw h="14.55mm" name="Ref" w="0.970972in">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Reference</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="Item">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Item</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="Qty">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>QTY</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="UnitP">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Unit Price</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="ListP">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>List Price</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="Dscnt">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>% Discount</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="Gst">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>GST</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <draw h="14.55mm" name="Delivery">
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Delivery</text>
+                  </value>
+                  <font typeface="Century Gothic" size="11pt" weight="bold" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+               </draw>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+            <subform layout="row" name="BodyRow">
+               <assist role="TR"/>
+               <field name="Ref2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="Item2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="Qty2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="UnitP2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="ListP2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="Dscnt2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="Gst2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <field name="Deliv2_1">
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+               </field>
+               <occur max="-1"/>
+               <keep intact="none"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></subform>
+         <draw name="InvoiceAttnValue" y="57.095mm" x="104.779mm" w="78.974mm" h="22.66mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Invoice ATTN to:<span style="xfa-spacerun:yes">  </span><span style="text-decoration:underline">PURCHASING<br/> DEPARTMENT SG</span></p><p style="text-decoration:underline;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font size="12pt" typeface="Century Gothic" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="5pt" spaceBelow="5pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <draw name="SPLn" y="32.808mm" x="122.45mm" w="51.488mm" h="0in">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.254mm"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="DeliveryRefHolder" y="56.671mm" x="6.562mm" w="1.435528in" h="0.561583in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Delivery reference # </text>
+            </value>
+            <font size="12pt" typeface="Calibri" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 100524 37600 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 21 Delivery reference #  0 1417 10417 0 0 0 "Calibri" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="EstimDtDlvHolder" y="69.901mm" x="6.562mm" w="48.032mm" h="0.369917in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Estimated Date of Delivery</text>
+            </value>
+            <font size="12pt" typeface="Calibri" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 133320 23800 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 26 Estimated Date of Delivery 0 1417 10417 0 0 0 "Calibri" 1 0 12000 ISO-8859-1?></draw>
+         <keep intact="none"/>
+         <?templateDesigner expand 1?></subform>
+      <subform h="50mm" w="197.299mm" name="Priceform">
+         <draw name="PriceSummaryHolder" y="5.821mm" x="6.648mm" w="114.04mm" h="26.72mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="PSln1" y="18.768mm" x="6.774mm" w="113.824mm" h="0in">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="TotalPriceLabel" y="9.791mm" x="8.508mm" w="0.794in" h="9.141mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Total Price</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 54334 23077 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Total Price 0 1417 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="TotalGSTLabel" y="9.791mm" x="34.168mm" w="0.699264in" h="9.401mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Total GST</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 47513 23815 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 Total GST 0 1417 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="DelivLabel" y="9.791mm" x="92.118mm" w="23.54mm" h="0.331028in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Delivery</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 63894 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 Delivery 0 11804 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <draw name="PSln2" y="5.858mm" x="31.274mm" w="0mm" h="26.51mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="PSln3" y="5.858mm" x="56.938mm" w="0mm" h="26.51mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="PSln4" y="5.831mm" x="85.768mm" w="0in" h="26.732mm">
+            <value>
+               <line/>
+            </value>
+         </draw>
+         <field name="TotalPriceValue" y="22.491mm" x="7.448mm" w="21.17mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <field name="Totalgstvalue" y="22.491mm" x="34.698mm" w="20.9mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <field name="Gstvalue" y="22.491mm" x="59.038mm" w="25.14mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <field name="DelivValue" y="22.491mm" x="89.198mm" w="27.79mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Calibri"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <draw name="GrandTotalHolder" y="5.821mm" x="143.968mm" w="42.99mm" h="26.72mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm" join="round"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="GrandTotalLabel" y="9.791mm" x="152.968mm" w="27.482mm" h="0.331028in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Grand Total</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 75068 21000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Grand Total 0 1417 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <field name="GtotalValue" y="21.751mm" x="148.558mm" w="35.062mm" minH="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Calibri" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+         </field>
+         <draw name="Gtotalln1" y="19.031mm" x="143.978mm" w="42.867mm" h="0in">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="ItmFormBtmLine" y="0.26mm" x="4.604mm" w="188.862mm" h="0in">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="GSTlablel" y="9.791mm" x="61.38mm" w="19.58mm" h="8.871mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>% GST</text>
+            </value>
+            <font size="11pt" typeface="Century Gothic" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center" lineHeight="13.8pt" spaceAbove="0pt" spaceBelow="10pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 52668 22312 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 5 % GST 0 11694 10129 0 0 0 "Century Gothic" 1 0 11000 ISO-8859-1?></draw>
+         <?templateDesigner expand 0?></subform>
+      <proto/>
+      <desc>
+         <text name="version">9.0.0.0.20091029.1.612548.606130</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Calibri" 0 0 ISO-8859-1 4 4 1 03ED1?>
+      <?renderCache.subset "Calibri" 1 0 ISO-8859-1 4 76 19 00030018001C01020110011A011E0128015D016F01750176017D018C0190019A01C001C703B7 DEacdefilmnorstvy#?>
+      <?renderCache.subset "Century Gothic" 0 0 ISO-8859-1 4 44 11 00030013001600180019001A001C001D00370048004F 035679:Tel?>
+      <?renderCache.subset "Century Gothic" 1 0 ISO-8859-1 4 216 54 000300060008000B000C000F00100011001400160019001A001B001D0024002600270028002A002B002C002F003000310032003300340035003600370038003C004400450046004700480049004A004B004C004D004F005000510052005300550056005700580059005A005C #%(),-.13678:ACDEGHILMNOPQRSTUYabcdefghijlmnoprstuvwy?>
+      <?renderCache.subset "Courier New" 1 0 ISO-8859-1 4 8 2 00030011 .?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Grid show:1, snap:0, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:-789764116?>
+   <?templateDesigner Zoom 93?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <tagged>0</tagged>
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common/>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"/>
+      <font typeface="Calibri" psName="Calibri-Bold" weight="bold" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2011-12-01T08:10:08Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:2e337895-68ab-4127-ba25-51c725401528</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:72c07a60-1552-4982-96b1-92b86d49da0d</xmpMM:InstanceID>
+      </rdf:Description>
+      <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <dc:format>application/pdf</dc:format>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.0.0.20091029.1.612548.606130</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>

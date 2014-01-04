@@ -1,0 +1,139 @@
+.tableheading {
+ 	color: #444444;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#itemsListing TD{
+ text-align:left;
+}
+.paddingAround {
+	border-radius:8px;
+	padding-left: 10px;
+	margin-bottom : 5px;
+}
+.paddingdecom {
+	border-radius:8px;
+	padding: 5px;
+	margin: 5px;
+}
+
+legend {
+	font-weight:bold;
+	color:#006E51;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+.ulStyle {
+	list-style-type:none;
+}
+.ulStyle LI {
+	padding:0px 0px 5px 0px;
+}
+
+.itemHeaderUL {
+	list-style-type:none;
+	width: 650px;
+	padding-left:0px;
+}
+.decomUL {
+	list-style-type:none;
+	width: 450px;
+	padding-left:5px;
+}
+.itemminiHeaderUL {
+	list-style-type:none;
+	width: 650px;
+	padding-left:0px;
+	color:#006E51;
+}
+
+.itemHeaderUL LI {
+	float:left;
+	padding:0px 5px 0px 0px;
+	
+}
+
+.bld {
+	font-weight: bold;
+	color: #444444;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bolddecom {
+	font-weight: bold;
+	color: #444444;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	padding-top: 10px;
+  	float:left;
+}
+.bldheader {
+	font-weight: bold;
+	color: #006E51;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	 padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cellStyle {
+	 color: #555555;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 10px 5px;
+    vertical-align: top;
+
+}
+
+.celldecomStyle {
+	 color: #555555;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 10px 5px;
+    vertical-align: top;
+	float:left;
+}
+.AquaAccordion .Tab {
+	background-color: #006E51;
+	color: #FFFFFF;
+	cursor: pointer;
+	border-style: none none solid;
+    border-width: 1px;
+	height: 18px;
+	padding: 1px;
+}
+.AquaAccordion {
+
+	overflow: hidden;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	
+}
+
+.boldhist {
+	font-weight: bold;
+	color: #444444;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	padding-top: 3px;
+  	float:left;
+}
+.cellhistStyle {
+	 color: #555555;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding-top: 3px;
+    vertical-align: top;
+	float:left;
+}

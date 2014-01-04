@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+								
+/*table .registration_form{width:630px;}*/
+
+table .registration_form tr th{
+	text-align:left;
+	width:290px;
+	color:#333333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	border-bottom:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;	
+	padding:2px;																	
+}
+table .registration_form tr td{
+	width:190px;
+	color:#666666;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	border-bottom:#CCCCCC 1px solid;
+	padding:2px;
+}
+
+.text{
+	color:#666666;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+}
+
+.text_red{
+	color:#FF0000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+}
+
+
+#ilse2010_guest_dietary_options, #ilse2010_14may_dietary_options{
+	padding:3px;
+	border:#CCCCCC 1px solid;
+	background-color:#FFFFFF;
+}
+.alert{color:#FF0000;}
+
+table .registration_form_small tr th{
+	text-align:left;
+	width:270px;
+	color:#333333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	border-bottom:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;	
+	padding:2px;																	
+}
+table .registration_form_small tr td{
+	width:190px;
+	color:#666666;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	border-bottom:#CCCCCC 1px solid;
+	padding:2px;
+}
+div.alertSuccess 
+{
+    background: #F8FAFC url(../images/accept.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #B5D4FE;
+    border-bottom: 2px solid #B5D4FE;
+    display:block;
+	color : #555555;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+div.information
+{
+    background:  url(../images/information.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #006d50;
+    border-bottom: 2px solid #006d50;
+    display:block;
+	color : #555555;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 
+}	
+div.alertError
+{
+    background: #F8FAFC url(../images/exclamation.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #8bbbaf;
+    border-bottom: 2px solid #8bbbaf;
+    display:block;
+	color : #555555;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 
+}	
+

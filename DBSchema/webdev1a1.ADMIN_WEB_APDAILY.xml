@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="webdev1a1" schema="ADMIN_WEB_APDAILY" type="Oracle - Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production&#10;With the Partitioning, Real Application Clusters, OLAP, Data Mining&#10;and Real Application Testing options">
+   <tables>
+      <table name="ITGOV_ASSET_PERMISSIONS" numRows="6" remarks="Assetaccess_id is the primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="ASSETACCESS_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="ASSETACCESS_ID" foreignKey="USERS_ASSETPERMISSION" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="ROLE" nullable="true" remarks="Designation of the user" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="0 " digits="0" id="2" name="PERMISSION" nullable="false" remarks="Level of access" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_ASSET_PERMISSIONS_I_FK1" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_ASSET_PERMISSIONS_I_FK2" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="ASSETACCESS_ID" sequenceNumberInPK="1"/>
+         <index name="ASSETPERMISSIONS_PK" unique="true">
+            <column ascending="true" name="ASSETACCESS_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_CURRENCY" numRows="5" remarks="" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="CURRENCY_ID" nullable="false" remarks="" size="22" type="NUMBER">
+            <child column="CURRENCY_ID" foreignKey="ITGOV_PURCHASES_ITEMS_CURSY" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="NAME" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="SYMBOL" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="CURRENCY_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_CURRENCY_PK" unique="true">
+            <column ascending="true" name="CURRENCY_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_DEPARTMENTS" numRows="8" remarks="Depart_id is the primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="DEPART_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="DEPART_ID" foreignKey="USERS_DEPART" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="NAME" nullable="false" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_DEPARTMENTS_ITGOV_U_FK1" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_DEPARTMENTS_ITGOV_U_FK2" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="DEPART_ID" sequenceNumberInPK="1"/>
+         <index name="DEPARTMENTS_PK" unique="true">
+            <column ascending="true" name="DEPART_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_FEEDBACK" numRows="1" remarks="Us_id is foreign key of table Users&#10;purchase_id id foreign key for table &#10;Purchases" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="US_ID" nullable="false" remarks="Foreign key for Users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="FEEDBACK_USER" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="REASON" nullable="true" remarks="" size="3000" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="TIME" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="3" name="FEEDBACK_ID" nullable="false" remarks="primary key" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="4" name="PURCHASE_ID" nullable="true" remarks="Foreign key for purchases" size="22" type="NUMBER">
+            <parent column="PURCHASE_ID" foreignKey="ITGOV_FEEDBACK_PURCHASES" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="Q1" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="6" name="Q2" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="7" name="Q3" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <primaryKey column="FEEDBACK_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_FEEDBACK_PK" unique="true">
+            <column ascending="true" name="FEEDBACK_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PRDUSRHISTORY" numRows="4" remarks="Asset_id is the primary key &#10;Us_id is foreign key for Users table&#10;Product_id is foreign key for Products table&#10;Software_id is foreign key for Softwares table" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="ASSET_ID" nullable="false" remarks="primary key" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="1" name="US_ID" nullable="false" remarks="Foreign key for users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="MAPPING_ASSETS_USERS" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL" digits="0" id="2" name="PRODUCT_ID" nullable="true" remarks="Foreign key for Products" size="22" type="NUMBER">
+            <parent column="PRODUCT_ID" foreignKey="MAPPING_ASSETS_PRODUCTS" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="3" name="STARTDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="ENDDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="6" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_MAPPING_ASSETS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="7" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="8" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_MAPPING_ASSETS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <primaryKey column="ASSET_ID" sequenceNumberInPK="1"/>
+         <index name="MAPPING_ASSETS_PK" unique="true">
+            <column ascending="true" name="ASSET_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PRODUCTS" numRows="2" remarks="product_id is primary key of products table&#10;vendor_id is foreign key for &#10;vendor table&#10;assettype_id is foreign key for Asset_items_type" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="PRODUCT_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="PRODUCT_ID" foreignKey="MAPPING_ASSETS_PRODUCTS" implied="false" onDeleteCascade="false" table="ITGOV_PRDUSRHISTORY"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="NAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="VENDOR_ID" nullable="false" remarks="foreign key for vendors" size="22" type="NUMBER">
+            <parent column="VENDOR_ID" foreignKey="PRODUCTS_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_VENDORS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Own'" digits="0" id="3" name="OWNED_LEASED" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="4" name="SERIALNO" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="5" name="BUDGETID" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="'01-APR-98'" digits="0" id="6" name="DATE_STARTED" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="NULL" digits="0" id="7" name="PURCHASETYPE_ID" nullable="true" remarks="foreign key for asset item types" size="22" type="NUMBER">
+            <parent column="PURCHASETYPE_ID" foreignKey="PRODUCTS_ASSET_ITEMS_TYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="8" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="9" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PRODUCTS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="10" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="11" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PRODUCTS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="12" name="MODEL_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="MODEL_ID" foreignKey="ITGOV_PRODUCTS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'N'" digits="0" id="13" name="DECOMMISION" nullable="true" remarks="" size="2" type="NVARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="14" name="DECOM_DATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="15" name="REASON" nullable="true" remarks="" size="250" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="'NEW'" digits="0" id="16" name="TYPE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="17" name="PURCHASE_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASE_ID" foreignKey="ITGOV_PRODUCTS_PURCH" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="18" name="PURCHASES_ITEMS_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASES_ITEMS_ID" foreignKey="ITGOV_PRODUCTS_PURCHITM" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="19" name="PURCHASEID_OLD" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="20" name="CAMPUS" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <primaryKey column="PRODUCT_ID" sequenceNumberInPK="1"/>
+         <index name="PRODUCTS_PK" unique="true">
+            <column ascending="true" name="PRODUCT_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASE_ITEMS_TYPE" numRows="14" remarks="purchasetype_id is the primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="PURCHASETYPE_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="PURCHASETYPE_ID" foreignKey="PRODUCTS_ASSET_ITEMS_TYPE" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="PURCHASETYPE_ID" foreignKey="ITGOV_PURCHASEITEMS_PURCHTYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+            <child column="PURCHASETYPE_ID" foreignKey="PURCHASES_ITEMS_TYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="PURCHASETYPE_ID" foreignKey="ITGOV_REQUEST_ITEMS_PURCHTYPE" implied="false" onDeleteCascade="false" table="ITGOV_REQUEST_ITEMS"/>
+            <child column="PURCHASETYPE_ID" foreignKey="ITGOV_SOFTWARES_PURCTYPE" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="NAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCH_ITEMS_TYPE_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCH_ITEMS_TYPE_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="PURCHASETYPE_ID" sequenceNumberInPK="1"/>
+         <index name="PURCHASING_ITEMS_TYPE_PK" unique="true">
+            <column ascending="true" name="PURCHASETYPE_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASE_PERMISSIONS" numRows="6" remarks="purchaseaccess_id is primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="PURCHASEACCESS_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="PURCHASEACCESS_ID" foreignKey="USERS_PURCHASEPERMISSION" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="ROLE" nullable="false" remarks="Designation of the user" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="PERMISSION" nullable="false" remarks="Level of Access" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASE_PERMISSION_FK1" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="6" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASE_PERMISSION_FK2" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <primaryKey column="PURCHASEACCESS_ID" sequenceNumberInPK="1"/>
+         <index name="PURCHASEPERMISSIONS_PK" unique="true">
+            <column ascending="true" name="PURCHASEACCESS_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASE_STATUS" numRows="20" remarks="status_id is the primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="STATUS_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="STATUS_ID" foreignKey="PURCHASES_PURCHASE_STATUS" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="STATUS_ID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="ITGOV_STATUSLOG"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="NAME" nullable="false" remarks="" size="50" type="VARCHAR2"/>
+         <primaryKey column="STATUS_ID" sequenceNumberInPK="1"/>
+         <index name="PURCHASE_STATUS_PK" unique="true">
+            <column ascending="true" name="STATUS_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASEITEMS_MODELS" numRows="58" remarks="model_id is primary key&#10;purchasetype_id is &#10;foreign key for purchases&#10;firstcreatedby is foreign key for users&#10;lastmodifiedby is foreign key for users" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="MODEL_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="MODEL_ID" foreignKey="ITGOV_PRODUCTS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="MODEL_ID" foreignKey="ITGOV_PURCHASES_ITEMS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="MODEL_ID" foreignKey="ITGOV_REQUEST_ITEMS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_REQUEST_ITEMS"/>
+            <child column="MODEL_ID" foreignKey="ITGOV_SOFTWARES_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="PURCHASETYPE_ID" nullable="true" remarks="foreign key for purchases" size="22" type="NUMBER">
+            <parent column="PURCHASETYPE_ID" foreignKey="ITGOV_PURCHASEITEMS_PURCHTYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="NAME" nullable="true" remarks="" size="100" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDBY" nullable="true" remarks="foreign key for users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASEITEMS_USIDCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDBY" nullable="true" remarks="foreign key for users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASEITEMS_USIDMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="MODEL_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_PURCHASEITEMS_MODEL_PK" unique="true">
+            <column ascending="true" name="MODEL_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASEREQUESTS" numRows="7" remarks="Request_id is primary key&#10;vendor_id is foreign key for &#10;Vendors&#10;purchasetype_id is foreign key for Purchases_items_type" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="REQUEST_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="REQUEST_ID" foreignKey="ITGOV_PURCHASES_REQID" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="REQUEST_ID" foreignKey="ITGOV_REQUEST_ITEMS_REQ" implied="false" onDeleteCascade="false" table="ITGOV_REQUEST_ITEMS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="CREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="2" name="CREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASEREQUESTS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Pending'" digits="0" id="3" name="REQUEST_STATUS" nullable="true" remarks="Passed,Pending,Removed" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="4" name="BUDGETID" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="5" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASEREQUESTS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="7" name="ONBEHALFOF" nullable="true" remarks="" size="100" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="8" name="ONBEREASON" nullable="true" remarks="" size="250" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="9" name="INCIDENT" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <primaryKey column="REQUEST_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_PURCHASEREQUESTS_PK" unique="true">
+            <column ascending="true" name="REQUEST_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASES" numRows="11" remarks="purchase_id is primary key &#10;us_id is foreign key for users table&#10;status_id &#10;is foreignkey for purchase_status table&#10;budgetmgr_id is foreignkey for budget_roles table" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="PURCHASE_ID" nullable="false" remarks="primary key" size="22" type="NUMBER">
+            <child column="PURCHASE_ID" foreignKey="ITGOV_FEEDBACK_PURCHASES" implied="false" onDeleteCascade="false" table="ITGOV_FEEDBACK"/>
+            <child column="PURCHASE_ID" foreignKey="ITGOV_PRODUCTS_PURCH" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="PURCHASE_ID" foreignKey="PURCHASES_ITEMS_PURCHASES" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="PURCHASE_ID" foreignKey="ITGOV_SOFTWARES_PURCH" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+            <child column="PURCHASE_ID" foreignKey="ITGOV_STATUSLOG_ITGOV_PUR_FK1" implied="false" onDeleteCascade="false" table="ITGOV_STATUSLOG"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="US_ID" nullable="true" remarks="foreign key for users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="PURCHASES_USERS" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="OPENDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="20 " digits="0" id="3" name="STATUS_ID" nullable="true" remarks="foreign key for status" size="22" type="NUMBER">
+            <parent column="STATUS_ID" foreignKey="PURCHASES_PURCHASE_STATUS" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_STATUS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="BUDGETID" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="5" name="BUDGETMGR_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="PURCHASES_BUDGET_ROLES" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="2 " digits="0" id="6" name="BUDGETAPPROVAL" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="7" name="TOTAL" nullable="true" remarks="Grand Total" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="8" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="9" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASES_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="10" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASES_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="11" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="12" name="BUDGETMGRCOMMENTS" nullable="true" remarks="" size="250" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="13" name="REQUEST_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="REQUEST_ID" foreignKey="ITGOV_PURCHASES_REQID" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEREQUESTS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="14" name="INS_PURCHASEID" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <primaryKey column="PURCHASE_ID" sequenceNumberInPK="1"/>
+         <index name="PURCHASES_PK" unique="true">
+            <column ascending="true" name="PURCHASE_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_PURCHASES_ITEMS" numRows="9" remarks="purchases_items_id is the primary key&#10;purchase_id is the foreign &#10;key for Purchases table&#10;vendor_id is the foreign key for vendors table&#10;purchasetype_id is the foerign key for &#10;puurchasing_items_type" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="PURCHASE_ID" nullable="true" remarks="foreign key for Purchases" size="22" type="NUMBER">
+            <parent column="PURCHASE_ID" foreignKey="PURCHASES_ITEMS_PURCHASES" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="VENDOR_ID" nullable="true" remarks="foreign key for vendors" size="22" type="NUMBER">
+            <parent column="VENDOR_ID" foreignKey="PURCHASES_ITEMS_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_VENDORS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="PURCHASETYPE_ID" nullable="true" remarks="foreign key for Purchase type Items" size="22" type="NUMBER">
+            <parent column="PURCHASETYPE_ID" foreignKey="PURCHASES_ITEMS_TYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+         </column>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="3" name="UNITPRICE" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="4" name="VENDOR_DELIVERY_DATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="DATE_REQD_BY" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="6" name="SHIPPINGCOST" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="7" name="INVOICEDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="8" name="INVOICENUMBER" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="9" name="SALESCONTACT" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="10" name="SALESPHONE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="11" name="SALESEMAIL" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="12" name="VENDOROFFER" nullable="true" remarks="" size="30" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="13" name="VENDORREF" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="14" name="MODEL_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="MODEL_ID" foreignKey="ITGOV_PURCHASES_ITEMS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="15" name="DESCRIPTION" nullable="true" remarks="" size="4000" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="16" name="QUANTITY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="17" name="COMMENTS" nullable="true" remarks="" size="100" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="18" name="PURCHASES_ITEMS_ID" nullable="false" remarks="" size="22" type="NUMBER">
+            <child column="PURCHASES_ITEMS_ID" foreignKey="ITGOV_PRODUCTS_PURCHITM" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="PURCHASES_ITEMS_ID" foreignKey="ITGOV_SOFTWARES_PURCHITM" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+         </column>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="19" name="LISTPRICE" nullable="true" remarks="Unit price multiplied by Quantity" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="20" name="DISCOUNT" nullable="true" remarks="% of discount" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="21" name="PAD" nullable="true" remarks="Price After Discount" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="22" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="23" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASES_ITEMS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="24" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="25" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_PURCHASES_ITEMS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="26" name="EXPECTED_DELIVERY_DATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="4" digits="0" id="27" name="CURRENCY_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="CURRENCY_ID" foreignKey="ITGOV_PURCHASES_ITEMS_CURSY" implied="false" onDeleteCascade="false" table="ITGOV_CURRENCY"/>
+         </column>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="28" name="TOTALAMT" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="29" name="TAX" nullable="true" remarks="% of tax" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="30" name="GRANDTOTAL" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="0" digits="0" id="31" name="DELIVERY_STATUS" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="32" name="NUMEROITEM" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="33" name="PO_DESCRIPTION" nullable="true" remarks="" size="4000" type="VARCHAR2"/>
+         <primaryKey column="PURCHASES_ITEMS_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_PURCHASES_ITEMS_PK" unique="true">
+            <column ascending="true" name="PURCHASES_ITEMS_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_REPORT_A_PROBLEM" numRows="0" remarks="Report_id is the primary key &#10;Us_id is a foreign key for Users &#10;table" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="US_ID" nullable="false" remarks="foreign key for users" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="REPORT_PROBLEM_USERS" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="SUBJECT" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="MESSAGE" nullable="true" remarks="" size="0" type="LONG"/>
+         <column autoUpdated="false" digits="6" id="3" name="TIME" nullable="true" remarks="" size="11" type="TIMESTAMP(6)"/>
+         <column autoUpdated="false" digits="0" id="4" name="REPORT_ID" nullable="false" remarks="primary key" size="22" type="NUMBER"/>
+         <primaryKey column="REPORT_ID" sequenceNumberInPK="1"/>
+         <index name="REPORT_A_PROBLEM_PK" unique="true">
+            <column ascending="true" name="REPORT_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_REQUEST_ITEMS" numRows="8" remarks="" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="ITEM_ID" nullable="false" remarks="Primary key" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="1" name="MODEL_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="MODEL_ID" foreignKey="ITGOV_REQUEST_ITEMS_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="DESCRIPTION" nullable="true" remarks="" size="4000" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="QUANTITY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_REQUEST_ITEMS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="PURCHASETYPE_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASETYPE_ID" foreignKey="ITGOV_REQUEST_ITEMS_PURCHTYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="7" name="REQUEST_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="REQUEST_ID" foreignKey="ITGOV_REQUEST_ITEMS_REQ" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEREQUESTS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="8" name="ITEM_STATUS" nullable="true" remarks="'S','A','R'" size="1" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="9" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_REQUEST_ITEMS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="10" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="ITEM_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_REQUEST_ITEMS_PK" unique="true">
+            <column ascending="true" name="ITEM_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_SOFTWARES" numRows="1" remarks="software_id is the primary key&#10;vendor_id is the foreign key for Vendors &#10;table" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="SOFTWARE_ID" nullable="false" remarks="primary key" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="1" name="VENDOR_ID" nullable="false" remarks="foreign key for vendors" size="22" type="NUMBER">
+            <parent column="VENDOR_ID" foreignKey="SOFTWARES_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_VENDORS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="NAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="DURATION" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="4" name="NO_OF_LICENSES" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="'NO' " digits="0" id="5" name="TERMINATION_NOTICE" nullable="false" remarks="Requirement of Termination Notice" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="6" name="NOTICEREQUIREMENT" nullable="true" remarks="" size="3500" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="7" name="DURATIONTYPE" nullable="true" remarks="day or month or year" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="8" name="STARTDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="'01-JAN-2012'" digits="0" id="9" name="ENDDATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="10" name="TYPE_OF_SOFTWARE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="11" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="12" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_SOFTWARES_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="13" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="14" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_SOFTWARES_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="15" name="PURCHASETYPE_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASETYPE_ID" foreignKey="ITGOV_SOFTWARES_PURCTYPE" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="16" name="MODEL_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="MODEL_ID" foreignKey="ITGOV_SOFTWARES_MODEL" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="17" name="PURCHASE_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASE_ID" foreignKey="ITGOV_SOFTWARES_PURCH" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'N'" digits="0" id="18" name="ISEXPIRED" nullable="true" remarks="" size="1" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="19" name="EXPIRED_DATE" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" defaultValue="'NEW'" digits="0" id="20" name="TYPE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="21" name="PURCHASES_ITEMS_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASES_ITEMS_ID" foreignKey="ITGOV_SOFTWARES_PURCHITM" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="22" name="PURCHASEID_OLD" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <primaryKey column="SOFTWARE_ID" sequenceNumberInPK="1"/>
+         <index name="SOFTWARES_PK" unique="true">
+            <column ascending="true" name="SOFTWARE_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_STATUSLOG" numRows="2" remarks="log_id is the primary key&#10;purchase_id is foreign key &#10;for purchases&#10;us_id is foreign key for users" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="LOG_ID" nullable="false" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="1" name="PURCHASE_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASE_ID" foreignKey="ITGOV_STATUSLOG_ITGOV_PUR_FK1" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="STATUS_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="STATUS_ID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="ITGOV_PURCHASE_STATUS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="3" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_STATUSLOG_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <primaryKey column="LOG_ID" sequenceNumberInPK="1"/>
+         <index name="ITGOV_STATUSLOG_PK" unique="true">
+            <column ascending="true" name="LOG_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_USERS" numRows="11" remarks="Us_id is the primary key&#10;UserName is also unique&#10;Assetaccess_id is foreign key for Assetpermissions table&#10;Purchaseaccess_id is foreign key for Purchasepermissions &#10;table&#10;Depart_id is foreign key for Departments table" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="US_ID" nullable="false" remarks="" size="22" type="NUMBER">
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_ASSET_PERMISSIONS_I_FK1" implied="false" onDeleteCascade="false" table="ITGOV_ASSET_PERMISSIONS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_ASSET_PERMISSIONS_I_FK2" implied="false" onDeleteCascade="false" table="ITGOV_ASSET_PERMISSIONS"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_DEPARTMENTS_ITGOV_U_FK1" implied="false" onDeleteCascade="false" table="ITGOV_DEPARTMENTS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_DEPARTMENTS_ITGOV_U_FK2" implied="false" onDeleteCascade="false" table="ITGOV_DEPARTMENTS"/>
+            <child column="US_ID" foreignKey="FEEDBACK_USER" implied="false" onDeleteCascade="false" table="ITGOV_FEEDBACK"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_MAPPING_ASSETS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PRDUSRHISTORY"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_MAPPING_ASSETS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PRDUSRHISTORY"/>
+            <child column="US_ID" foreignKey="MAPPING_ASSETS_USERS" implied="false" onDeleteCascade="false" table="ITGOV_PRDUSRHISTORY"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PRODUCTS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PRODUCTS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PURCH_ITEMS_TYPE_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCH_ITEMS_TYPE_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_ITEMS_TYPE"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PURCHASE_PERMISSION_FK1" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_PERMISSIONS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCHASE_PERMISSION_FK2" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_PERMISSIONS"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PURCHASEITEMS_USIDCRT" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCHASEITEMS_USIDMOD" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEITEMS_MODELS"/>
+            <child column="CREATEDBY" foreignKey="ITGOV_PURCHASEREQUESTS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEREQUESTS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCHASEREQUESTS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASEREQUESTS"/>
+            <child column="BUDGETMGR_ID" foreignKey="PURCHASES_BUDGET_ROLES" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PURCHASES_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCHASES_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="US_ID" foreignKey="PURCHASES_USERS" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_PURCHASES_ITEMS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_PURCHASES_ITEMS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="US_ID" foreignKey="REPORT_PROBLEM_USERS" implied="false" onDeleteCascade="false" table="ITGOV_REPORT_A_PROBLEM"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_REQUEST_ITEMS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_REQUEST_ITEMS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_REQUEST_ITEMS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_REQUEST_ITEMS"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_SOFTWARES_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_SOFTWARES_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_STATUSLOG_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_STATUSLOG"/>
+            <child column="FIRSTCREATEDBY" foreignKey="ITGOV_VENDORS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_VENDORS"/>
+            <child column="LASTMODIFIEDBY" foreignKey="ITGOV_VENDORS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_VENDORS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="USERNAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="FIRSTNAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="MIDDLENAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="4" name="LASTNAME" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="5" name="CAMPUS" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="6" name="EMAIL" nullable="true" remarks="" size="100" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="7" name="WORKPHONE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="8" name="MOBILEPHONE" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="9" name="FAX" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="10" name="ASSETACCESS_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="ASSETACCESS_ID" foreignKey="USERS_ASSETPERMISSION" implied="false" onDeleteCascade="false" table="ITGOV_ASSET_PERMISSIONS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="11" name="PURCHASEACCESS_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="PURCHASEACCESS_ID" foreignKey="USERS_PURCHASEPERMISSION" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASE_PERMISSIONS"/>
+         </column>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="12" name="DEPART_ID" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="DEPART_ID" foreignKey="USERS_DEPART" implied="false" onDeleteCascade="false" table="ITGOV_DEPARTMENTS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="13" name="LASTACCESSEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="14" name="LASTACCESSEDBY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="15" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="16" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" digits="0" id="17" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="18" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="'EN'" digits="0" id="19" name="MSGLANGUAGE" nullable="true" remarks="" size="2" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="20" name="ACTIVE_STATUS" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="21" name="ACCESSRIGHTS" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <primaryKey column="US_ID" sequenceNumberInPK="1"/>
+         <index name="USERS_PK" unique="true">
+            <column ascending="true" name="US_ID"/>
+         </index>
+      </table>
+      <table name="ITGOV_VENDORS" numRows="3" remarks="vendor_id is the primary key" schema="ADMIN_WEB_APDAILY" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="VENDOR_ID" nullable="false" remarks="" size="22" type="NUMBER">
+            <child column="VENDOR_ID" foreignKey="PRODUCTS_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_PRODUCTS"/>
+            <child column="VENDOR_ID" foreignKey="PURCHASES_ITEMS_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_PURCHASES_ITEMS"/>
+            <child column="VENDOR_ID" foreignKey="SOFTWARES_VENDORS" implied="false" onDeleteCascade="false" table="ITGOV_SOFTWARES"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="VENDOR_NAME" nullable="false" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="2" name="DETAIL" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="3" name="ADDRESS" nullable="true" remarks="" size="500" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="4" name="EMAIL" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="5" name="PHONE1" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="6" name="PHONE2" nullable="true" remarks="" size="20" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="7" name="FAX" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" digits="0" id="8" name="FIRSTCREATEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="9" name="FIRSTCREATEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_VENDORS_USCRT" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="10" name="LASTMODIFIEDON" nullable="true" remarks="" size="7" type="DATE"/>
+         <column autoUpdated="false" digits="0" id="11" name="LASTMODIFIEDBY" nullable="true" remarks="" size="22" type="NUMBER">
+            <parent column="US_ID" foreignKey="ITGOV_VENDORS_USMOD" implied="false" onDeleteCascade="false" table="ITGOV_USERS"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="12" name="GLOCATION" nullable="true" remarks="" size="50" type="VARCHAR2"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="13" name="ACTIVE_STATUS" nullable="true" remarks="" size="22" type="NUMBER"/>
+         <primaryKey column="VENDOR_ID" sequenceNumberInPK="1"/>
+         <index name="VENDOR_PK" unique="true">
+            <column ascending="true" name="VENDOR_ID"/>
+         </index>
+      </table>
+   </tables>
+</database>

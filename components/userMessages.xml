@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections>
+	<section name="generic">
+		<message id="GN-001" lan="EN" text="oops! Program error.The administrator has been notified. Please try using the system after sometime while we work on the cause."/>
+		<message id="GN-002" lan="EN" text="Insuffecient Privilages!!"/>
+		<message id="GN-001" lan="FR" text="oopso! Programo erroro.The administratoro has been notifiedo. Pleaso tryo using the system after sometime while we work on the cause."/>
+		<message id="GN-002" lan="FR" text="Insuffeciento Privilageso!!"/>
+		<message id="GN-003" lan="EN" text="You do not have sufficient priveleges to access this page. Please contact the Administrator for the same"/>
+	</section>
+	<section name="login">
+		<message id="LG-001" lan="EN" text="Wrongful credentials. Please try again" />
+		<message id="LG-002" lan="EN" text="You do not have access for this application. Kindly contact the Administrator." />
+		<message id="LG-003" lan="EN" text="oops! Database Connectivity error." />
+		<message id="LG-004" lan="EN" text="oops! Active Directory query error." />
+	</section>
+	<section name="session">
+		<message id="SN-001" lan="EN" text="Session Timedout! Please login again to access the application." />
+		<message id="SN-002" lan="EN" text="oops! Session value error. " />
+	</section>
+	<section name="asset">
+		<message id="AS-001" lan="EN" text="" />
+	</section>
+	<section name="purchase">
+		<message id="PU-001" lan="EN" text="" />
+	</section>
+</sections>
